@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0f6">
+  <meta name="description" content="Một câu hỏi nhỏ dành cho người đặc biệt.">
+  <title>Em có yêu anh không? 💗</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <div class="decoration d1" aria-hidden="true">♥</div>
+    <div class="decoration d2" aria-hidden="true">♥</div>
+    <div class="decoration d3" aria-hidden="true">✦</div>
+    <div class="decoration d4" aria-hidden="true">♥</div>
+
+    <section class="card" aria-labelledby="main-title">
+      <div class="tag">♡ Một câu hỏi nho nhỏ ♡</div>
+      <div class="heart" aria-hidden="true">💌</div>
+      <section id="question-panel">
+        <h1 id="main-title">Em có yêu<br><em>anh không?</em></h1>
+        <p class="intro">Anh chỉ muốn biết câu trả lời từ trái tim em thôi.</p>
+        <div class="choice-actions">
+          <button class="button primary" id="yes" type="button">Có 💗</button>
+          <button class="button secondary" id="no" type="button">Không 🌷</button>
+        </div>
+      </section>
+
+
+      <section id="camera-panel" class="hidden" aria-labelledby="camera-title">
+        <h2 id="camera-title">PHOTO BOOTH Dành cho riêng em</h2>
+        <p id="choice-summary" class="subtle"></p>
+        <p class="notice">Nếu em đồng ý, anh muốn chụp lại 1 bức hình của người con gái xinh nhất thế giới !!! để lưu giữ như 1 món quà</p>
+        <div class="camera-frame">
+          <video id="preview" autoplay playsinline muted aria-label="Xem trước camera trước"></video>
+          <img id="captured" class="hidden" alt="Ảnh vừa chụp, chưa được gửi đi">
+          <div class="camera-corner top-left"></div>
+          <div class="camera-corner bottom-right"></div>
+        </div>
+        <canvas id="canvas" class="hidden"></canvas>
+        <div class="actions">
+          <button class="button secondary" id="open-camera" type="button">Mở camera / Chụp lại</button>
+          <button class="button secondary" id="capture" type="button" disabled>Chụp ảnh</button>
+          <button class="button ghost" id="cancel" type="button">Bỏ qua / Không gửi</button>
+        </div>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <section id="done-panel" class="hidden" aria-labelledby="done-title">
+        <div class="done-heart" aria-hidden="true">💞</div>
+        <h2 id="done-title">Cảm ơn em!</h2>
+        <p id="done-message">Chúc em có 1 ngày thật tuyệt vời anh yêu em!!!</p>
+        <button class="button ghost" id="again" type="button">Trở về câu hỏi</button>
+      </section>
+      <p class="footer">Made with ♡</p>
+    </section>
+  </main>
+</body>
+</html>
+
